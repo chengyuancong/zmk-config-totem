@@ -77,14 +77,14 @@ num_symbol_nav {
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
     bindings = <
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃    ESC    ┃     _     ┃     UP    ┃     =     ┃     {     ┃   ┃     }     ┃     1     ┃     2     ┃     3     ┃     +     ┃
-                  &kp ESC     &kp UNDER   &kp UP      &kp EQUAL   &kp LBRC        &kp RBRC      &kp N1      &kp N2      &kp N3   &kp KP_PLUS
+//             ┃    ESC    ┃     _     ┃  C LOCK   ┃     =     ┃     {     ┃   ┃     }     ┃     1     ┃     2     ┃     3     ┃     +     ┃
+                  &kp ESC     &kp UNDER   &kp CAPS      &kp EQUAL   &kp LBRC        &kp RBRC      &kp N1      &kp N2      &kp N3   &kp KP_PLUS
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃   SHIFT   ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
-                &kp LSHFT    &kp LEFT    &kp DOWN    &kp RIGHT   &kp LBKT        &kp RBKT       &kp N4      &kp N5   &kp N6     &kp KP_MINUS
+//             ┃   SHIFT   ┃   LEFT    ┃    UP     ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
+                &kp LSHFT    &kp LEFT     &kp UP    &kp RIGHT   &kp LBKT        &kp RBKT       &kp N4      &kp N5   &kp N6     &kp KP_MINUS
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    ` ~    ┃    DEL    ┃   P UP    ┃  C LOCK   ┃  P DOWN   ┃     (     ┃   ┃     )     ┃     7     ┃     8     ┃     9     ┃     *     ┃     /     ┃
-     &kp GRAVE    &kp DEL     &kp PG_UP   &kp CAPS    &kp PG_DN   &kp LPAR        &kp RPAR      &kp N7      &kp N8      &kp N9  &kp KP_MULTIPLY &kp KP_DIVIDE      
+// ┃    ` ~    ┃    DEL    ┃  PAGE UP  ┃   DOWN    ┃ PAGE DOWN ┃     (     ┃   ┃     )     ┃     7     ┃     8     ┃     9     ┃     *     ┃     /     ┃
+     &kp GRAVE    &kp DEL     &kp PG_UP   &kp DOWN    &kp PG_DN   &kp LPAR        &kp RPAR      &kp N7      &kp N8      &kp N9  &kp KP_MULTIPLY &kp KP_DIVIDE      
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   BSPC    ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃     0     ┃     .     ┃
                                            &trans      &trans      &trans         &trans     &kp KP_N0   &kp KP_DOT     
