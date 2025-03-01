@@ -33,13 +33,21 @@
             label = "ebu";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&kp C_BRI_UP>;
+            bindings =
+                <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C_BRI_UP>
+                , <&macro_release &kp LCTRL>
+                ;
         };
         e_bright_dn:  e_bright_dn {
             label = "ebd";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&kp C_BRI_DN>;
+            bindings =
+                <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C_BRI_UP>
+                , <&macro_release &kp LCTRL>
+                ;
         };
     };
 
@@ -60,7 +68,7 @@ base_layer {
                 &mt LSHFT A  &mt LALT S &mt LCTRL D  &mt LGUI F    &kp G           &kp H    &mt RGUI J  &mt RCTRL K &mt RALT L  &mt RSHFT SEMI
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    | \    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃    , <    ┃     . >   ┃     / ?   ┃    ' "    ┃
-       &kp PIPE    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M      &kp COMMA   &kp DOT     &kp FSLH    &kp SQT
+       &kp PIPE    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M      &kp COMMA   &kp DOT     &kp FSLH    &kp SQT
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    BSPC   ┃    TAB    ┃    SPC    ┃   ┃   ENTER   ┃    ESC    ┃    DEL    ┃
                                         &kp BSPC   &lt LEF TAB  &kp SPACE         &kp RET  &lt RIG ESC   &kp DEL
@@ -77,11 +85,11 @@ num_symbol_nav {
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
     bindings = <
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃    ESC    ┃     _     ┃  C LOCK   ┃     =     ┃     {     ┃   ┃     }     ┃     1     ┃     2     ┃     3     ┃     +     ┃
-                  &kp ESC     &kp UNDER   &kp CAPS      &kp EQUAL   &kp LBRC        &kp RBRC      &kp N1      &kp N2      &kp N3   &kp KP_PLUS
+//             ┃    ESC    ┃  C LOCK   ┃     _     ┃     =     ┃     {     ┃   ┃     }     ┃     1     ┃     2     ┃     3     ┃     +     ┃
+                  &kp ESC     &kp CAPS   &kp UNDER   &kp EQUAL   &kp LBRC        &kp RBRC      &kp N1      &kp N2      &kp N3   &kp KP_PLUS
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   SHIFT   ┃   LEFT    ┃    UP     ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
-                &kp LSHFT    &kp LEFT     &kp UP    &kp RIGHT   &kp LBKT        &kp RBKT       &kp N4      &kp N5     &kp N6     &kp KP_MINUS
+                &kp LSHFT    &kp LEFT     &kp UP    &kp RIGHT    &kp LBKT        &kp RBKT       &kp N4      &kp N5     &kp N6     &kp KP_MINUS
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    ` ~    ┃    DEL    ┃  PAGE UP  ┃   DOWN    ┃ PAGE DOWN ┃     (     ┃   ┃     )     ┃     7     ┃     8     ┃     9     ┃     *     ┃     /     ┃
      &kp GRAVE    &kp DEL     &kp PG_UP   &kp DOWN    &kp PG_DN   &kp LPAR        &kp RPAR      &kp N7      &kp N8      &kp N9  &kp KP_MULTIPLY &kp KP_DIVIDE      
