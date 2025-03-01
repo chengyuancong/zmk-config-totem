@@ -33,13 +33,13 @@
             label = "ebu";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT &kp C_BRI_UP>;
+            bindings = <&kp LSHFT>, <&kp C_BRI_UP>;
         };
         e_bright_dn:  e_bright_dn {
             label = "ebd";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT &kp C_BRI_DN>;
+            bindings = <&kp LSHFT>, <&kp C_BRI_DN>;
         };
     };
 
@@ -81,7 +81,7 @@ num_symbol_nav {
                   &kp ESC     &kp UNDER   &kp CAPS      &kp EQUAL   &kp LBRC        &kp RBRC      &kp N1      &kp N2      &kp N3   &kp KP_PLUS
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   SHIFT   ┃   LEFT    ┃    UP     ┃   RIGHT   ┃     [     ┃   ┃     ]     ┃     4     ┃     5     ┃     6     ┃     -     ┃
-                &kp LSHFT    &kp LEFT     &kp UP    &kp RIGHT   &kp LBKT        &kp RBKT       &kp N4      &kp N5   &kp N6     &kp KP_MINUS
+                &kp LSHFT    &kp LEFT     &kp UP    &kp RIGHT   &kp LBKT        &kp RBKT       &kp N4      &kp N5     &kp N6     &kp KP_MINUS
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    ` ~    ┃    DEL    ┃  PAGE UP  ┃   DOWN    ┃ PAGE DOWN ┃     (     ┃   ┃     )     ┃     7     ┃     8     ┃     9     ┃     *     ┃     /     ┃
      &kp GRAVE    &kp DEL     &kp PG_UP   &kp DOWN    &kp PG_DN   &kp LPAR        &kp RPAR      &kp N7      &kp N8      &kp N9  &kp KP_MULTIPLY &kp KP_DIVIDE      
